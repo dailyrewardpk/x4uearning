@@ -1889,8 +1889,8 @@ if (videoUrl && typeof videoUrl === 'string') {
                 showCustomAlert('Please enter a valid amount.');
                 return;
             }
-            if (amount < 50) {
-                showCustomAlert('Minimum withdrawal amount is PKR 50.');
+            if (amount < 10) {
+                showCustomAlert('Minimum withdrawal amount is PKR 10.');
                 return;
             }
             submitBtn.disabled = true;
