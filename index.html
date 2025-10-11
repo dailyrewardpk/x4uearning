@@ -1872,9 +1872,11 @@ if (videoUrl && typeof videoUrl === 'string') {
             }
         }
         function openGroupChat() {
-            const groupLink = "https://whatsapp.com/channel/0029VbAtpkx4inovaSRul70x";
-            window.open(groupLink, '_blank');
-        }
+    // Apne number se pehle country code (92) lagayein aur shuru ka 0 hata dein.
+    const whatsappNumber = "923262550724";
+    const whatsappLink = `https://wa.me/${whatsappNumber}`;
+    window.open(whatsappLink, '_blank');
+}
         function contactAdmin() {
     window.location.href = "mailto:x4uearncontact.com";
 }
